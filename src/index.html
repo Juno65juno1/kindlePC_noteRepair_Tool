@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>KindleNT</title>
+  </head>
+  <body>
+    <div class="head-container">
+      <div class="head-tool-name">KindleNT</div>
+      <div>
+        <a href="rideintothesunx@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="body-container">
+      <div class="body-head">
+        <div class="shortHi">
+          你好, 我是 <span class="tool-name">KindleNT</span> :-)
+          <div class="tool-name-desc">一款处理 KindlePC 笔记的在线工具</div>
+        </div>
+
+        <button id="processFile" class="button-82-pushable" role="button">
+          <span class="button-82-shadow"></span>
+          <span class="button-82-edge"></span>
+          <span class="button-82-front text">处理文件</span>
+        </button>
+      </div>
+
+      <div class="desc-container">
+        <div class="description paragraph">
+          <h3 class="title">产品说明</h3>
+          <div class="detail">
+            <p>
+              此工具专为那些希望将「KindlePC 导出的 HTML
+              笔记」转化为「更便于阅读与管理的美观 HTML 文件」的用户而设计。
+            </p>
+            <p>
+              通过精细的转换流程，它保证了笔记内容的整洁性与易读性，使得管理和回顾变得轻松愉快。
+            </p>
+          </div>
+        </div>
+
+        <div class="useSteps paragraph">
+          <h3 class="title">使用方法</h3>
+          <div class="detail">
+            <p>第一步：点击页面上的按钮。</p>
+            <p>第二步：在弹出的文件选择对话框中，选择需要处理的文件。</p>
+            <p>第三步：文件上传后，系统将自动开始处理。请耐心等待处理完成。</p>
+            <p>
+              第四步：处理完成后，弹出对话框提示下载。选择保存位置并下载处理后的文件。
+            </p>
+          </div>
+        </div>
+
+        <div class="attention paragraph">
+          <h3 class="title">注意事项</h3>
+          <div class="detail">
+            <p>
+              1. 确保上传的文件是「Kindle 电脑端」导出的文件，并且其后缀为
+              .html。
+            </p>
+            <p>2. 处理过程中，请勿关闭页面或关闭浏览器，以免影响转换效果。</p>
+          </div>
+        </div>
+
+        <div class="beforeandafter paragraph">
+          <h3 class="title">前后对比</h3>
+          <div class="pic-group">
+            <div class="pic-container">
+              <div class="pic-desc">处理前</div>
+              <img src="./img/before.png" alt="before" />
+            </div>
+
+            <div class="pic-container">
+              <div class="pic-desc">处理后</div>
+              <img src="./img/after.png" alt="after" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+  <script>
+    let year = new Date().getFullYear();
+    document.querySelector("footer").innerHTML =
+      "Built with <i class='fas fa-code footer-icon'></i> and <i class='fas fa-heart footer-icon'></i> by vv605 | " +
+      year;
+  </script>
+</html>

@@ -1,0 +1,195 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.06em; /* 增加 5% 的字母间距 */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* margin: 1.25rem; */
+  color: #333333;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bodyContainer {
+  /* background-color: beige; */
+  width: 88%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 中等屏幕 (平板, 768px 及以上) */
+@media (min-width: 768px) {
+  .bodyContainer {
+    max-width: 80%; /* 720px */
+  }
+}
+
+/* 大屏幕 (小型桌面, 992px 及以上) */
+@media (min-width: 992px) {
+  .bodyContainer {
+    max-width: 80%; /* 960px */
+  }
+}
+
+/* 特大屏幕 (大型桌面, 1200px 及以上) */
+@media (min-width: 1200px) {
+  .bodyContainer {
+    max-width: 70%; /* 1140px */
+  }
+}
+
+/* 超大屏幕 (超宽显示器, 1400px 及以上) */
+@media (min-width: 1400px) {
+  .bodyContainer {
+    max-width: 60%; /* 1320px */
+  }
+}
+
+.notebookFor {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 700;
+  text-align: center;
+  color: rgb(119, 119, 119);
+}
+
+.noteDetail {
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 700;
+  text-align: center;
+  color: rgb(119, 119, 119);
+  margin-top: 0.5rem; /* 22px */
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.bookTitle {
+  font-size: 2rem; /* 32px */
+  font-weight: 700;
+  text-align: center;
+  color: #333333;
+  margin-top: 1.375rem; /* 22px */
+  padding: 0rem;
+}
+
+.authors {
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 700;
+  text-align: center;
+  color: rgb(119, 119, 119);
+  margin-top: 1.375rem; /* 22px */
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.sectionHeading {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  text-align: left;
+  color: #333333;
+  margin-top: 2.5rem; /* 40px */
+  margin-bottom: 0.875rem; /* 14px */
+}
+
+.noteHeading {
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-align: left;
+  color: rgb(156, 156, 156);
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.comment {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.comment::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  background-color: rgb(142, 210, 255);
+}
+
+.noteText {
+  font-size: 1rem;
+  line-height: 180%;
+  font-weight: 500;
+  text-align: left;
+  color: #333333;
+  margin: 0.3125rem 0rem 0rem; /* 5px 0px 0px */
+}
+
+.highlight_blue {
+  color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+  color: #ffd7ae;
+}
+
+.highlight_pink {
+  color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+  color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+  margin-top: 0.625rem; /* 10px */
+  text-align: left;
+}
+
+.notebookGraphic img {
+  -o-box-shadow: 0rem 0rem 0.3125rem #888; /* 0px 0px 5px */
+  -icab-box-shadow: 0rem 0rem 0.3125rem #888; /* 0px 0px 5px */
+  -khtml-box-shadow: 0rem 0rem 0.3125rem #888; /* 0px 0px 5px */
+  -moz-box-shadow: 0rem 0rem 0.3125rem #888; /* 0px 0px 5px */
+  -webkit-box-shadow: 0rem 0rem 0.3125rem #888; /* 0px 0px 5px */
+  box-shadow: 0rem 0rem 0.3125rem #888; /* 0px 0px 5px */
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 0rem none;
+  height: 1px;
+  background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+/* 下面添加 目录样式 */
+.tocBox {
+  margin-top: 1rem;
+  margin-bottom: 3.125rem; /* 50px */
+}
+.tocBox div {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  color: rgb(156, 156, 156);
+  min-width: 50%;
+  font-size: 1rem; /* 16px */
+  font-weight: medium;
+  margin-bottom: 0.3125rem; /* 5px */
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+a:hover {
+  color: black;
+}
