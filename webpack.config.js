@@ -12,14 +12,18 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "bundle.js",
-      publicPath: "/",
+      publicPath: isProduction ? "./" : "/",
+      assetModuleFilename: "assets/[hash][ext][query]",
     },
     module: {
       rules: [
         {
           test: /\.css$/,
           use: ["style-loader", "css-loader"],
-          // use: ["raw-loader"],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: "asset/resource",
         },
       ],
     },
@@ -48,7 +52,7 @@ module.exports = (env, argv) => {
     },
     devServer: {
       static: {
-        directory: path.join(__dirname, "src"),
+        directory: path.join(__dirname, "dist"),
       },
       compress: true,
       port: 9000,
